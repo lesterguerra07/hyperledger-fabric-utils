@@ -62,6 +62,15 @@ echo "🌐 Configurando entorno Go..."
 source ~/.bashrc
 pause
 
+echo "📦 Instalando Node.js 20.x (LTS recomendado para chaincode)..."
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+sudo apt install -y nodejs
+
+echo "📦 Verificando instalación de Node.js y npm..."
+node -v
+npm -v
+pause
+
 echo "🧱 Descargando Hyperledger Fabric v$FABRIC_VERSION y componentes..."
 mkdir -p $HOME/hyperledger
 cd $HOME/hyperledger
