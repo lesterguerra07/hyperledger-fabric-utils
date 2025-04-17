@@ -87,6 +87,8 @@ pause
 
 echo "✅ Instalación completa de Hyperledger Fabric ${FABRIC_VERSION}"
 echo "📁 Ubicación: $HOME/hyperledger/fabric-samples"
+echo 'export PATH=$PATH:$HOME/hyperledger/fabric-samples/bin' >> ~/.profile
+source ~/.profile
 pause
 
 echo "⚙️ Levantando test-network..."
